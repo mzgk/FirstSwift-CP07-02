@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     // MARK: - Outlet
     @IBOutlet weak var label: UILabel!
 
+    // MARK: - Property
+    var timer: Timer?       // タイマー開始時に生成するので、Optional型で定義
+    var currentSeconds = 0
+
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
