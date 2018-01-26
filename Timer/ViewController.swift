@@ -35,6 +35,13 @@ class ViewController: UIViewController {
         start(seconds: sender.tag)
     }
 
+    /// タイマーをストップする
+    @IBAction func stopButtonTapped(_ sender: UIButton) {
+        if let timer = timer {
+            timer.invalidate()
+        }
+    }
+
     // MARK: - Function
     /// タイマーを開始するメソッド
     func start(seconds: Int) {

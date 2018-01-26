@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="m1X-OP-xuH">
-                                <rect key="frame" x="0.0" y="491" width="375" height="76"/>
+                                <rect key="frame" x="0.0" y="427" width="375" height="76"/>
                                 <subviews>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" springLoaded="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bWF-g3-r5a">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="76"/>
@@ -94,18 +94,29 @@ min</string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4M-BN-QmF">
+                                <rect key="frame" x="120" y="543" width="135" height="44"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="32"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A28-qc-460"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W2d-A3-FTQ" secondAttribute="trailing" id="34u-1Q-X1h"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m1X-OP-xuH" secondAttribute="bottom" constant="100" id="GQk-7K-yUQ"/>
+                            <constraint firstItem="G4M-BN-QmF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="4yw-8N-hXT"/>
                             <constraint firstItem="W2d-A3-FTQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="L7g-lT-iFw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hDA-oF-BOS" secondAttribute="trailing" id="PTP-ER-Hj9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m1X-OP-xuH" secondAttribute="trailing" id="TLP-9G-87Q"/>
                             <constraint firstItem="hDA-oF-BOS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tfp-uB-Iea"/>
                             <constraint firstItem="W2d-A3-FTQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cSP-QJ-lRG"/>
                             <constraint firstItem="m1X-OP-xuH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gsV-bL-giY"/>
+                            <constraint firstItem="G4M-BN-QmF" firstAttribute="top" secondItem="m1X-OP-xuH" secondAttribute="bottom" constant="40" id="lta-Sy-DAr"/>
                             <constraint firstItem="hDA-oF-BOS" firstAttribute="top" secondItem="W2d-A3-FTQ" secondAttribute="bottom" constant="8" id="rvH-aI-oZx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G4M-BN-QmF" secondAttribute="trailing" constant="120" id="uCx-5u-lbl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="G4M-BN-QmF" secondAttribute="bottom" constant="80" id="vKj-VU-qJJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
