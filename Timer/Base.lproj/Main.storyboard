@@ -36,16 +36,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="44"/>
                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="32"/>
                                         <state key="normal" title="10秒"/>
+                                        <connections>
+                                            <action selector="tenSecButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DnA-DM-WRK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxR-Hj-F7l">
                                         <rect key="frame" x="125" y="0.0" width="125" height="44"/>
                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="32"/>
                                         <state key="normal" title="3分"/>
+                                        <connections>
+                                            <action selector="threeMinButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GL0-Rx-xLr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJt-cf-eEC">
                                         <rect key="frame" x="250" y="0.0" width="125" height="44"/>
                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="32"/>
                                         <state key="normal" title="5分"/>
+                                        <connections>
+                                            <action selector="fiveMinButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l6V-Pm-aKC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -61,6 +70,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="W2d-A3-FTQ" id="xJ8-kA-8Oh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - Outlet
+    @IBOutlet weak var label: UILabel!
+
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: - User Action
+    @IBAction func tenSecButtonTapped(_ sender: UIButton) {
+    }
 
+    @IBAction func threeMinButtonTapped(_ sender: UIButton) {
+    }
+
+    @IBAction func fiveMinButtonTapped(_ sender: UIButton) {
+    }
 }
 
