@@ -23,50 +23,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2d-A3-FTQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2d-A3-FTQ">
                                 <rect key="frame" x="0.0" y="120" width="375" height="48"/>
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="m1X-OP-xuH">
-                                <rect key="frame" x="0.0" y="523" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="491" width="375" height="76"/>
                                 <subviews>
-                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWF-g3-r5a">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="44"/>
-                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="32"/>
-                                        <state key="normal" title="10秒"/>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" springLoaded="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bWF-g3-r5a">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="76"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment>
+                                                    <string key="content">10
+sec</string>
+                                                    <attributes>
+                                                        <font key="NSFont" size="32" name="Courier"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
                                         <connections>
                                             <action selector="timerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="puP-bS-HZk"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="180" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxR-Hj-F7l">
-                                        <rect key="frame" x="125" y="0.0" width="125" height="44"/>
-                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="32"/>
-                                        <state key="normal" title="3分"/>
+                                    <button opaque="NO" tag="180" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WxR-Hj-F7l">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="76"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment>
+                                                    <string key="content">3
+min</string>
+                                                    <attributes>
+                                                        <font key="NSFont" size="32" name="Courier"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
                                         <connections>
                                             <action selector="timerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yF0-IQ-eh5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJt-cf-eEC">
-                                        <rect key="frame" x="250" y="0.0" width="125" height="44"/>
-                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="32"/>
-                                        <state key="normal" title="5分"/>
+                                    <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AJt-cf-eEC">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="76"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment>
+                                                    <string key="content">5
+min</string>
+                                                    <attributes>
+                                                        <font key="NSFont" size="32" name="Courier"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
                                         <connections>
                                             <action selector="timerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jUr-YY-SAK"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sec" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDA-oF-BOS">
+                                <rect key="frame" x="0.0" y="176" width="375" height="24"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="24"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W2d-A3-FTQ" secondAttribute="trailing" id="34u-1Q-X1h"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m1X-OP-xuH" secondAttribute="bottom" constant="100" id="GQk-7K-yUQ"/>
                             <constraint firstItem="W2d-A3-FTQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="L7g-lT-iFw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hDA-oF-BOS" secondAttribute="trailing" id="PTP-ER-Hj9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m1X-OP-xuH" secondAttribute="trailing" id="TLP-9G-87Q"/>
+                            <constraint firstItem="hDA-oF-BOS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tfp-uB-Iea"/>
                             <constraint firstItem="W2d-A3-FTQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cSP-QJ-lRG"/>
                             <constraint firstItem="m1X-OP-xuH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gsV-bL-giY"/>
+                            <constraint firstItem="hDA-oF-BOS" firstAttribute="top" secondItem="W2d-A3-FTQ" secondAttribute="bottom" constant="8" id="rvH-aI-oZx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -76,6 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="29.23538230884558"/>
         </scene>
     </scenes>
 </document>

@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         }
 
         currentSeconds = seconds
-        label.text = "残り \(currentSeconds) 秒"
+        label.text = "\(currentSeconds)"
         timer = Timer.scheduledTimer(timeInterval: 1.0,
                                      target: self,
                                      selector: #selector(ViewController.update),
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     /// 更新メソッド
     @objc func update() {
         currentSeconds -= 1
-        label.text = "残り \(currentSeconds) 秒"
+        label.text = "\(currentSeconds)"
 
         if (currentSeconds == 0) {
             timer?.invalidate()
