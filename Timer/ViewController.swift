@@ -30,16 +30,9 @@ class ViewController: UIViewController {
     }
 
     // MARK: - User Action
-    @IBAction func tenSecButtonTapped(_ sender: UIButton) {
-        start(seconds: 10)
-    }
-
-    @IBAction func threeMinButtonTapped(_ sender: UIButton) {
-        start(seconds: 180)
-    }
-
-    @IBAction func fiveMinButtonTapped(_ sender: UIButton) {
-        start(seconds: 300)
+    @IBAction func timerButtonTapped(_ sender: UIButton) {
+        // 各ボタンのtagに秒数を格納しておく
+        start(seconds: sender.tag)
     }
 
     // MARK: - Function
