@@ -45,6 +45,11 @@ class ViewController: UIViewController {
     // MARK: - Function
     /// タイマーを開始するメソッド
     func start(seconds: Int) {
+        // 前のタイマーが起動している場合は、停止する
+        if let timer = timer {
+            timer.invalidate()
+        }
+
         currentSeconds = seconds
         label.text = "残り \(currentSeconds) 秒"
         timer = Timer.scheduledTimer(timeInterval: 1.0,
