@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class ViewController: UIViewController {
 
@@ -51,6 +52,18 @@ class ViewController: UIViewController {
                                      selector: #selector(ViewController.update),
                                      userInfo: nil,
                                      repeats: true)
+    }
+
+    /// 更新メソッド
+    @objc func update() {
+        currentSeconds -= 1
+        label.text = "残り \(currentSeconds) 秒"
+
+        if (currentSeconds == 0) {
+            timer?.invalidate()
+            let soundId: SystemSoundID = 1005
+            AudioServicesPlayAlertSound(soundId)
+        }
     }
 }
 
