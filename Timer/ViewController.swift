@@ -37,18 +37,14 @@ class ViewController: UIViewController {
 
     /// タイマーをストップする
     @IBAction func stopButtonTapped(_ sender: UIButton) {
-        if let timer = timer {
-            timer.invalidate()
-        }
+        timer?.invalidate()
     }
 
     // MARK: - Function
     /// タイマーを開始するメソッド
     func start(seconds: Int) {
         // 前のタイマーが起動している場合は、停止する
-        if let timer = timer {
-            timer.invalidate()
-        }
+        timer?.invalidate()
 
         currentSeconds = seconds
         label.text = "\(currentSeconds)"
